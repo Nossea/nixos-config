@@ -94,7 +94,6 @@
     extraGroups = [ "networkmanager" "wheel" "root" ];
     packages = with pkgs; [
       libnotify
-      neofetch
       firefox
       thunderbird
     ];
@@ -145,6 +144,7 @@
     firefox
     thunderbird
     wget
+    neofetch
   ];
 
 
