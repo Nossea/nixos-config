@@ -146,6 +146,7 @@
     thunderbird
     wget
     neofetch
+    alacritty
   ];
 
 
