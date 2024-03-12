@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 current_datetime=$(date +"%Y-%m-%d %H:%M:%S")
+previousVersion=$(git rev-list --count --all)
+trueVersion=$((previousVersion + 1))
 
 set -e
 
@@ -17,10 +19,8 @@ sudo nixos-rebuild switch --flake /home/nossea/nixos-config#default &>nixos-swit
 
 git reset -- nixos-switch.log
 
-Version=$(git rev-list --count --all)
-
-git commit -am " ${Version+1}: $current_datetime"
+git commit -am "Version ${trueVersion}: $current_datetime"
 
 git push
 
-notify-send -e "NixOS Rebuilt OK! Version ${Version+1} Active!" --icon=software-update-available
+notify-send -e "NixOS Rebuilt OK! Version ${trueVersion} Active!" --icon=software-update-available
