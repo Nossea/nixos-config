@@ -17,6 +17,19 @@
   # Enable flakes:
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # Enable flake-based autoupdating.
+system.autoUpgrade = {
+  enable = true;
+  flake = inputs.self.outPath;
+  flags = [
+    "--update-input"
+    "nixpkgs"
+    "-L" # print build logs
+  ];
+  dates = "02:00";
+  randomizedDelaySec = "45min";
+};
+
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
