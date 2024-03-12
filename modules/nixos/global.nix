@@ -37,12 +37,12 @@
         # Add any missing dynamic libraries for unpackaged programs here, NOT in environment.systemPackages
     ];
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
+    # Enable CUPS to print documents.
+    services.printing.enable = true;
 
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
+    # Configure keymap in X11
+    services.xserver = {
+        layout = "us";
+        xkbVariant = "";
   };
 }
