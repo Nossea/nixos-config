@@ -6,7 +6,7 @@ trueVersion=$((previousVersion + 1))
 
 set -e
 
-cd /home/nossea/nixos-config/
+cd ./
 
 git reset
 
