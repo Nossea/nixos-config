@@ -77,6 +77,13 @@
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
 
+  # Exclude unwanted packages from Plasma.
+  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
+    plasma-browser-integration
+    konsole
+    oxygen
+  ];
+
 
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
