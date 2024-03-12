@@ -19,4 +19,6 @@ git commit -am "$current_datetime"
 
 git push
 
-notify-send -e "NixOS Rebuilt OK!" --icon=software-update-available
+Version=$(git rev-list --count --all)
+
+notify-send -e "NixOS Rebuilt OK! Version ${Version} Active!" --icon=software-update-available

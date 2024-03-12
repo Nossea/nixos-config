@@ -126,6 +126,7 @@
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
       ../../modules/outdoors/steam.nix
+      ../../modules/outdoors/media.nix
     ];
 
 

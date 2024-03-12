@@ -1,4 +1,4 @@
-{config, pkgs, ...}:
+{inputs, pkgs, ...}:
 
 {
   #enable Steam: https://linuxhint.com/how-to-instal-steam-on-nixos/
@@ -22,5 +22,8 @@
     winetricks
     protontricks
     vulkan-tools
+
+    # Minecraft
+    prismlauncher
   ];
 }
