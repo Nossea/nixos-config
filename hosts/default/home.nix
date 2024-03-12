@@ -6,6 +6,13 @@
   home.username = "nossea";
   home.homeDirectory = "/home/nossea";
 
+  # Environment
+  home.sessionVariables = {
+    EDITOR = "vscode";
+    BROWSER = "firefox";
+    TERMINAL = "alacritty";
+  };
+
   imports = 
     [
       ../../modules/home-manager/vscode.nix
