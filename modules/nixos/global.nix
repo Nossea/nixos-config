@@ -8,6 +8,12 @@
     boot.loader.grub.device = "/dev/vda";
     boot.loader.grub.useOSProber = true;
 
+    # Global packages
+    environment.systemPackages = with pkgs; 
+    [
+        libnotify
+    ];
+    
 
     # Enable flakes:
     nix.settings.experimental-features = [ "nix-command" "flakes" ];

@@ -108,7 +108,6 @@
     wget
     neofetch
     alacritty
-    dunst
   ];
 
 
