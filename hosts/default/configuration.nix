@@ -91,6 +91,7 @@
       ../../modules/outdoors/steam.nix
       ../../modules/outdoors/media.nix
       ../../modules/outdoors/hyprland/hyprland.nix
+      ../../modules/outdoors/kde-plasma.nix
     ];
 
 
