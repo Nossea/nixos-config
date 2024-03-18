@@ -12,7 +12,10 @@
       ];
     };
   };
-  environment.systemPackages = with pkgs; [
+  
+  
+  environment.systemPackages = with pkgs; 
+  [
     # Steam 
     mangohud
     gamemode

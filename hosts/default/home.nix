@@ -7,7 +7,8 @@
   home.homeDirectory = "/home/nossea";
 
   # Environment
-  home.sessionVariables = {
+  home.sessionVariables = 
+  {
     EDITOR = "vscode";
     BROWSER = "firefox";
     TERMINAL = "alacritty";

@@ -8,7 +8,8 @@
   #  ------- SYSTEM SETTINGS -------  #
 
   # Enable flake-based autoupdating.
-  system.autoUpgrade = {
+  system.autoUpgrade = 
+  {
     enable = true;
     flake = inputs.self.outPath;
     flags = [
@@ -43,28 +44,12 @@
   services.xserver.enable = true;
 
 
-  # Enable the KDE Plasma Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager = {
-    plasma5.enable = true;
-    xterm.enable = false;
-  };
-
-  services.xserver.excludePackages = [ pkgs.xterm ];
-  
-  # Exclude unwanted packages from Plasma.
-  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
-    plasma-browser-integration
-    konsole
-    oxygen
-  ];
-
-
 #  ------- USER SETTTINGS -------  #
 
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.nossea = {
+  users.users.nossea = 
+  {
     isNormalUser = true;
     description = "Nossea";
     extraGroups = [ "networkmanager" "wheel" "root" ];
@@ -82,7 +67,8 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
-  i18n.extraLocaleSettings = {
+  i18n.extraLocaleSettings = 
+  {
     LC_ADDRESS = "en_US.UTF-8";
     LC_IDENTIFICATION = "en_US.UTF-8";
     LC_MEASUREMENT = "en_US.UTF-8";
@@ -104,10 +90,12 @@
       inputs.home-manager.nixosModules.default
       ../../modules/outdoors/steam.nix
       ../../modules/outdoors/media.nix
+      ../../modules/outdoors/hyprland/hyprland.nix
     ];
 
 
-  home-manager = {
+  home-manager = 
+  {
     #also pass inputs to home-manager modules
     extraSpecialArgs = { inherit inputs; };
     users = {
@@ -118,12 +106,13 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; 
+  [
     firefox
     thunderbird
     wget
     neofetch
-    alacritty
+    kitty
   ];
 
 

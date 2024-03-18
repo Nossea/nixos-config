@@ -1,7 +1,8 @@
 {inputs, pkgs, ...}:
 
 {
-    environment.systemPackages = with pkgs; [
+    environment.systemPackages = with pkgs; 
+    [
         # Lutris
         #lutris-unwrapped  # (not needed)
         lutris
