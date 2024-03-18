@@ -14,7 +14,7 @@ git add *
 
 git diff -U0 *.nix
 
-echo "Nixos rebuilding..."
+sudo echo "Nixos rebuilding..."
 sudo nixos-rebuild switch --flake /home/nossea/nixos-config#default &>nixos-switch.log || (cat nixos-switch.log | grep --color error && false)
 
 git reset -- nixos-switch.log
