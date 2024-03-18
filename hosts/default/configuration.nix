@@ -50,7 +50,6 @@
     description = "Nossea";
     extraGroups = [ "networkmanager" "wheel" "root" ];
     packages = with pkgs; [
-      libnotify
       firefox
       thunderbird
     ];
@@ -108,7 +107,8 @@
     thunderbird
     wget
     neofetch
-    kitty
+    alacritty
+    dunst
   ];
 
 

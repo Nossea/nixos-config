@@ -6,18 +6,11 @@
   home.username = "nossea";
   home.homeDirectory = "/home/nossea";
 
-  # Environment
-  home.sessionVariables = 
-  {
-    EDITOR = "vscode";
-    BROWSER = "firefox";
-    TERMINAL = "alacritty";
-  };
-
   imports = 
     [
       ../../modules/home-manager/vscode.nix
       ../../modules/home-manager/git.nix
+      ../../modules/home-manager/discord.nix
     ];
 
   # This value determines the Home Manager release that your configuration is
