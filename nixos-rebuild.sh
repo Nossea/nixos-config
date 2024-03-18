@@ -23,4 +23,4 @@ git commit -am "Version ${trueVersion}: $current_datetime"
 
 git push
 
-notify-send -e "NixOS Rebuilt OK! Version ${trueVersion} Active!" --icon=software-update-available
+notify-send -e "NixOS Rebuilt OK!"  "Version ${trueVersion} Active!"
