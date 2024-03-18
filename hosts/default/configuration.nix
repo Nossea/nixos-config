@@ -40,10 +40,6 @@
   # services.xserver.libinput.enable = true;
 
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-
 #  ------- USER SETTTINGS -------  #
 
 
@@ -90,7 +86,6 @@
       inputs.home-manager.nixosModules.default
       ../../modules/outdoors/steam.nix
       ../../modules/outdoors/media.nix
-      ../../modules/outdoors/hyprland.nix
       ../../modules/outdoors/kde-plasma.nix
     ];
 

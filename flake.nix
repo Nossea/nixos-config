@@ -7,22 +7,8 @@
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    hyprland.url = "github:hyprwm/Hyprland";
-
-    hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland";
     }; 
   };
-
-  
-  inputs = {
-   
-
-  };
-  
   
 
   outputs = { self, nixpkgs, ... }@inputs:
@@ -32,13 +18,15 @@
     in
     {
     
-      nixosConfigurations.default = nixpkgs.lib.nixosSystem {
+      nixosConfigurations = {
+          # The default config
+        default = nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs;};
           modules = [ 
             ./hosts/default/configuration.nix
             inputs.home-manager.nixosModules.default
           ];
         };
-
+      };
     };
 }
