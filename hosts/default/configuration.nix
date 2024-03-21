@@ -83,9 +83,9 @@
       ../../modules/nixos/global.nix
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
-      ../../modules/outdoors/steam.nix
       ../../modules/outdoors/media.nix
       ../../modules/outdoors/kde-plasma.nix
+      ../../modules/outdoors/gaming/my-gaming.nix
     ];
 
 
@@ -107,6 +107,7 @@
     thunderbird
     wget
     neofetch
+    virt-manager
     alacritty
   ];
 

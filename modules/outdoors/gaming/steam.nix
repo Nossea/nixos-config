@@ -25,8 +25,6 @@
     winetricks
     protontricks
     vulkan-tools
-
-    # Minecraft
-    prismlauncher
+    
   ];
 }
