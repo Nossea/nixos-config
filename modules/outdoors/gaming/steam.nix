@@ -25,7 +25,7 @@
     winetricks
     protontricks
     vulkan-tools
-    protonup-ng
+    protonup-ng # Tool for installing Proton GE https://github.com/protonup-ng/protonup-ng
     
   ];
 }

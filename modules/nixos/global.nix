@@ -14,6 +14,7 @@
         libnotify
         udisks
         obsidian # Notes are important, don't judge me!
+        cloudflare-warp
     ];
 
 

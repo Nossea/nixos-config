@@ -86,6 +86,7 @@
       ../../modules/outdoors/media.nix
       ../../modules/outdoors/kde-plasma.nix
       ../../modules/outdoors/gaming/my-gaming.nix
+      ../../modules/outdoors/usb-flashers.nix
     ];
 
 
@@ -109,6 +110,7 @@
     neofetch
     virt-manager
     alacritty
+    parsec-bin
   ];
 
 
