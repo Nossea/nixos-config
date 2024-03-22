@@ -25,6 +25,7 @@
     winetricks
     protontricks
     vulkan-tools
+    protonup-ng
     
   ];
 }

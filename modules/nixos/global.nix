@@ -13,8 +13,9 @@
     [
         libnotify
         udisks
+        obsidian # Notes are important, don't judge me!
     ];
-    
+
 
     # Enable flakes:
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
