@@ -87,6 +87,7 @@
       ../../modules/outdoors/kde-plasma.nix
       ../../modules/outdoors/gaming/my-gaming.nix
       ../../modules/outdoors/usb-flashers.nix
+      ../../modules/outdoors/revolt.nix
     ];
 
 
@@ -104,10 +105,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; 
   [
-    firefox
     thunderbird
-    wget
-    neofetch
     virt-manager
     alacritty
     parsec-bin

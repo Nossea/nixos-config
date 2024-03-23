@@ -13,8 +13,14 @@
     [
         libnotify
         udisks
+        wget
+        firefox
+        neofetch
+        pika-backup
+        libsForQt5.ark
+        shutter
         obsidian # Notes are important, don't judge me!
-        cloudflare-warp
+        #cloudflare-warp
     ];
 
 
