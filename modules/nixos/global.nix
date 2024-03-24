@@ -13,6 +13,7 @@
     [
         libnotify
         udisks
+        gnome.gnome-disk-utility
         wget
         firefox
         neofetch

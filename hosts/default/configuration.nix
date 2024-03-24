@@ -109,6 +109,7 @@
     virt-manager
     alacritty
     parsec-bin
+    baobab
   ];
 
 
