@@ -20,6 +20,7 @@ sudo nixos-rebuild switch --flake /home/${USER}/nixos-config#default &>nixos-swi
 
 echo "Nixos successfully rebuilt!"
 
+find ./hosts/* -type d -exec git reset -- hardware-configuration.nix {} \;
 git reset -- nixos-switch.log
 
 git commit -am "Version ${trueVersion}: $current_datetime"
