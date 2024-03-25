@@ -81,6 +81,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ../../modules/nixos/global.nix
+      ../../modules/nixos/nvidia.nix
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
       ../../modules/outdoors/media.nix
