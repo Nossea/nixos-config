@@ -3,10 +3,15 @@
 {
     # All global packages are here. Basically a "starter config".
 
-    # Bootloader.
-    boot.loader.grub.enable = true;
-    boot.loader.grub.device = "/dev/vda";
-    boot.loader.grub.useOSProber = true;
+    # Bootloaders
+
+    # Grub is slowly getting phased out and thus should be avoided but if that is impossible you can install it here:
+    #boot.loader.grub.enable = true;
+    #boot.loader.grub.device = "/dev/vda";
+    #boot.loader.grub.useOSProber = true;
+
+    boot.loader.systemd-boot.enable = true;
+    boot.loader.efi.canTouchEfiVariables = true;
 
     # Global packages
     environment.systemPackages = with pkgs; 
@@ -20,8 +25,10 @@
         pika-backup
         libsForQt5.ark
         shutter
+        mpv
         obsidian # Notes are important, don't judge me!
-        #cloudflare-warp
+        wgcf
+        wireguard-tools
     ];
 
 
