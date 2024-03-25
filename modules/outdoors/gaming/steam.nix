@@ -19,7 +19,7 @@
     # Steam 
     mangohud
     gamemode
-    dxvk
+    protonup-qt
 
     # WINE 
     wine
