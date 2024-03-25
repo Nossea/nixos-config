@@ -19,6 +19,7 @@
     # Steam 
     mangohud
     gamemode
+    dxvk
 
     # WINE 
     wine
