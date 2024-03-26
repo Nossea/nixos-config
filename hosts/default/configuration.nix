@@ -80,9 +80,10 @@
 
   imports =
     [ # Include the results of the hardware scan.
+      ./hardware-configuration.nix
       ../../modules/program-files/global.nix
       ../../modules/program-files/nvidia.nix
-      ./hardware-configuration.nix
+      ../../modules/program-files/dependancies/active-dependencies.nix
       inputs.home-manager.nixosModules.default
       ../../modules/outdoors/media.nix
       ../../modules/outdoors/kde-plasma.nix
