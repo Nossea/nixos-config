@@ -32,6 +32,7 @@
         nix-index
     ];
 
+    programs.thunar.enable = true;
 
     # Enable flakes:
     nix.settings.experimental-features = [ "nix-command" "flakes" ];

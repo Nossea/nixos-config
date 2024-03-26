@@ -18,6 +18,7 @@
       plasma-browser-integration
       konsole
       oxygen
+      pkgs.plasma5Packages.dolphin
     ];
 
     # Enable the X11 windowing system.
