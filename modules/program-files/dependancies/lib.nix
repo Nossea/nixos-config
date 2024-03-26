@@ -13,5 +13,6 @@
         libdrm
         gtk3
         pango
+        cairo
     ];
 }
