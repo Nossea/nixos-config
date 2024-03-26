@@ -26,5 +26,6 @@
         expat
         alsa-lib
         electron_28
+        libglvnd
     ];
 }
