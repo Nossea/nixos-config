@@ -10,5 +10,6 @@
         dbus
         atk
         cups
+        libdrm
     ];
 }
