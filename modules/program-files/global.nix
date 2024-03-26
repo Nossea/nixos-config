@@ -32,9 +32,6 @@
         nix-index
     ];
 
-    services.gvfs.enable = true;
-    programs.thunar.enable = true;
-
     # Enable flakes:
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
