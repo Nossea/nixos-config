@@ -11,5 +11,6 @@
         atk
         cups
         libdrm
+        gtk3
     ];
 }
