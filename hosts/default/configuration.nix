@@ -80,8 +80,8 @@
 
   imports =
     [ # Include the results of the hardware scan.
-      ../../modules/nixos/global.nix
-      ../../modules/nixos/nvidia.nix
+      ../../modules/program-files/global.nix
+      ../../modules/program-files/nvidia.nix
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
       ../../modules/outdoors/media.nix
@@ -110,7 +110,6 @@
     virt-manager
     alacritty
     parsec-bin
-    baobab
   ];
 
 

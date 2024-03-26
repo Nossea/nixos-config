@@ -29,6 +29,7 @@
         obsidian # Notes are important, don't judge me!
         wgcf
         wireguard-tools
+        nix-index
     ];
 
 
