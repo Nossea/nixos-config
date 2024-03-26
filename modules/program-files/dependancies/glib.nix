@@ -8,5 +8,6 @@
         nss
         nspr
         dbus
+        atk
     ];
 }
