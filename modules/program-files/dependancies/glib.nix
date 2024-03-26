@@ -7,5 +7,6 @@
         glib
         nss
         nspr
+        dbus
     ];
 }
