@@ -12,5 +12,6 @@
         cups
         libdrm
         gtk3
+        pango
     ];
 }
