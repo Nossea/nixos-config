@@ -84,6 +84,7 @@
       ../../modules/program-files/global.nix
       ../../modules/program-files/nvidia.nix
       ../../modules/program-files/dependancies/active-dependencies.nix
+      ../../modules/program-files/programming-files/active-programming-files.nix
       inputs.home-manager.nixosModules.default
       ../../modules/outdoors/media.nix
       ../../modules/outdoors/kde-plasma.nix

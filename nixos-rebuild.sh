@@ -16,7 +16,7 @@ git diff -U0 *.nix
 
 sudo echo "Nixos rebuilding..."
 
-sudo nixos-rebuild switch --flake ./#default &>nixos-switch.log || (cat nixos-switch.log | grep --color error && false)
+sudo nixos-rebuild switch --option eval-cache false --flake ./#default &>nixos-switch.log || (cat nixos-switch.log | grep --color error && false)
 
 echo "Nixos successfully rebuilt!"
 
