@@ -30,6 +30,8 @@
         wgcf
         wireguard-tools
         nix-index
+        xmenu
+        p7zip
     ];
 
     # Enable flakes:
