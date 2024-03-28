@@ -27,5 +27,7 @@
     protontricks
     vulkan-tools
     
+    # Useful configuration tool
+    gamemode
   ];
 }
