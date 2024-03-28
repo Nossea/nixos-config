@@ -27,7 +27,8 @@
     protontricks
     vulkan-tools
     
-    # Useful configuration tool
+    # Useful configuration tools
     gamemode
+    gamescope
   ];
 }

@@ -4,6 +4,8 @@
     programs.nix-ld.enable = true;
     programs.nix-ld.libraries = with pkgs; [
         # Add any missing dynamic libraries for unpackaged programs here, NOT in environment.systemPackages
+
+        # DNA
         glib
         nss
         nspr
@@ -27,5 +29,6 @@
         alsa-lib
         electron
         libglvnd
+        # End of DNA (or just use steam-run like a normal person (since this doesn't actually work anyways :P))
     ];
 }
