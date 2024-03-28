@@ -3,6 +3,6 @@
 {
     imports =
     [
-        #./lib.nix
+        ./lib.nix
     ];
 }
