@@ -32,6 +32,7 @@
         nix-index
         xmenu
         p7zip
+        keepassxc
     ];
 
     # Enable flakes:
