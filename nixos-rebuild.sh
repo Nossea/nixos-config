@@ -25,7 +25,7 @@ git reset -- nixos-switch.log
 
 git commit -am "Version ${trueVersion}: $current_datetime"
 
-git push
+git push --force
 
 echo "
 
