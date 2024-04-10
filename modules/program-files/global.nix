@@ -33,6 +33,7 @@
         xmenu
         p7zip
         keepassxc
+        gnomeExtensions.translate-assistant
     ];
 
     # Enable flakes:
