@@ -17,8 +17,6 @@
     environment.systemPackages = with pkgs; 
     [
         libnotify
-        udisks
-        gnome.gnome-disk-utility
         wget
         firefox
         neofetch
@@ -33,7 +31,7 @@
         xmenu
         p7zip
         keepassxc
-        gnomeExtensions.translate-assistant
+        translate-shell
     ];
 
     # Enable flakes:
