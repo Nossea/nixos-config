@@ -7,21 +7,6 @@
 {
   #  ------- SYSTEM SETTINGS -------  #
 
-  # Enable flake-based autoupdating.
-  system.autoUpgrade = 
-  {
-    enable = true;
-    flake = inputs.self.outPath;
-    flags = [
-      "--update-input"
-      "nixpkgs"
-      "-L" # print build logs
-    ];
-    dates = "20:00";
-    randomizedDelaySec = "45min";
-  };
-
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -113,6 +98,7 @@
     alacritty
     parsec-bin
     gnome.gnome-disk-utility
+    xautoclick
   ];
 
 

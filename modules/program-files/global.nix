@@ -32,6 +32,7 @@
         p7zip
         keepassxc
         translate-shell
+        nh
     ];
 
     # Enable flakes:
