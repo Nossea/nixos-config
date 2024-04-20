@@ -14,8 +14,6 @@ git add *
 
 git diff -U0 *.nix
 
-sudo nix-collect-garbage --delete-older-than 10d
-
 sudo echo "
 
 Nixos rebuilding..."
@@ -37,3 +35,11 @@ NixOS Rebuilt OK!
 Version ${trueVersion} Active!"
 
 notify-send -e "NixOS Rebuilt OK!"  "Version ${trueVersion} Active!"
+
+echo "
+
+Cleaning System...
+
+"
+
+sudo nix-collect-garbage --delete-older-than 10d
