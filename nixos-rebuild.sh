@@ -14,7 +14,11 @@ git add *
 
 git diff -U0 *.nix
 
-sudo echo "Nixos rebuilding..."
+sudo nix-collect-garbage --delete-older-than 10d
+
+sudo echo "
+
+Nixos rebuilding..."
 
 sudo nixos-rebuild switch --option eval-cache false --flake ./#default &>nixos-switch.log || (cat nixos-switch.log | grep --color error && false)
 

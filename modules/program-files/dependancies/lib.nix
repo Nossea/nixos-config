@@ -22,13 +22,21 @@
         xorg.libXext
         xorg.libXfixes
         xorg.libXrandr
+        xorg.libXrender
         xorg.libxcb
+        xorg.libXtst
+        xorg.libXi
+        xorg.libxshmfence
+        xorg.libxkbfile
         libxkbcommon
         mesa
         expat
         alsa-lib
         electron
         libglvnd
+        fontconfig
+        freetype
+        libkrb5
         # End of DNA (or just use steam-run like a normal person (since this doesn't actually work anyways :P))
     ];
 }
