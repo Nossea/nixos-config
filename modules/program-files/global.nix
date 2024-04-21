@@ -27,12 +27,12 @@
         obsidian # Notes are important, don't judge me!
         wgcf
         wireguard-tools
-        nix-index
         xmenu
         p7zip
         keepassxc
         translate-shell
         nh
+        nix-index
     ];
 
     # Enable flakes:
