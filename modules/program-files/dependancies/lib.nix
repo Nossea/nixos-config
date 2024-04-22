@@ -4,40 +4,56 @@
     programs.nix-ld.enable = true;
     programs.nix-ld.libraries = with pkgs; [
         # Add any missing dynamic libraries for unpackaged programs here, NOT in environment.systemPackages
+        # DNA
+        glib
+        nss
+        nspr
+        dbus
+        atk
+        cups
+        libdrm
+        gtk3
+        pango
+        cairo
+        xorg.libX11
+        xorg.libXcomposite
+        xorg.libXdamage
+        xorg.libXext
+        xorg.libXfixes
+        xorg.libXrandr
+        xorg.libXrender
+        xorg.libxcb
+        xorg.libXtst
+        xorg.libXi
+        xorg.libxshmfence
+        xorg.libxkbfile
+        libxkbcommon
+        mesa
+        expat
+        alsa-lib
+        electron
+        libglvnd
+        fontconfig
+        freetype
+        libkrb5
         stdenv.cc.cc
         openssl
-        xorg.libXcomposite
-        xorg.libXtst
-        xorg.libXrandr
-        xorg.libXext
-        xorg.libX11
-        xorg.libXfixes
         libGL
         libva
         pipewire
-        xorg.libxcb
-        xorg.libXdamage
-        xorg.libxshmfence
         xorg.libXxf86vm
         libelf
         
         # Required
-        glib
         gtk2
         bzip2
-        
         # Without these it silently fails
         xorg.libXinerama
         xorg.libXcursor
-        xorg.libXrender
         xorg.libXScrnSaver
-        xorg.libXi
         xorg.libSM
         xorg.libICE
         gnome2.GConf
-        nspr
-        nss
-        cups
         libcap
         SDL2
         libusb1
@@ -45,7 +61,6 @@
         ffmpeg
         # Only libraries are needed from those two
         libudev0-shim
-        
         # Verified games requirements
         xorg.libXt
         xorg.libXmu
@@ -56,7 +71,6 @@
         glew110
         libidn
         tbb
-        
         # Other things from runtime
         flac
         freeglut
@@ -85,17 +99,9 @@
         xorg.libXft
         libvdpau
         gnome2.pango
-        cairo
-        atk
         gdk-pixbuf
-        fontconfig
-        freetype
-        dbus
         alsaLib
-        expat
         # Needed for electron
-        libdrm
-        mesa
-        libxkbcommon
+        # End of DNA (or just use steam-run like a normal person (since this doesn't actually work anyways :P))
     ];
 }
