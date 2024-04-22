@@ -28,6 +28,7 @@
         xorg.libxshmfence
         xorg.libxkbfile
         libxkbcommon
+        xcb-util-cursor
         mesa
         expat
         alsa-lib
@@ -47,6 +48,7 @@
         # Required
         gtk2
         bzip2
+
         # Without these it silently fails
         xorg.libXinerama
         xorg.libXcursor
@@ -59,8 +61,10 @@
         libusb1
         dbus-glib
         ffmpeg
+
         # Only libraries are needed from those two
         libudev0-shim
+
         # Verified games requirements
         xorg.libXt
         xorg.libXmu
@@ -71,6 +75,7 @@
         glew110
         libidn
         tbb
+
         # Other things from runtime
         flac
         freeglut
@@ -101,7 +106,6 @@
         gnome2.pango
         gdk-pixbuf
         alsaLib
-        # Needed for electron
         # End of DNA (or just use steam-run like a normal person (since this doesn't actually work anyways :P))
     ];
 }
