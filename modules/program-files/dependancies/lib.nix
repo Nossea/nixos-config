@@ -29,6 +29,7 @@
         xorg.libxkbfile
         libxkbcommon
         xcb-util-cursor
+        xcb-util-cursor-HEAD
         mesa
         expat
         alsa-lib
