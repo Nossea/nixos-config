@@ -22,7 +22,6 @@
         neofetch
         pika-backup
         libsForQt5.ark
-        shotman
         mpv
         obsidian # Notes are important, don't judge me!
         wgcf
@@ -33,6 +32,11 @@
         translate-shell
         nh
         nix-index
+    ];
+
+    imports = 
+    [
+        ./dependancies/shotman.nix
     ];
 
     # Enable flakes:
