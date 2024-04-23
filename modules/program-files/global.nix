@@ -22,7 +22,7 @@
         neofetch
         pika-backup
         libsForQt5.ark
-        shutter
+        shotman
         mpv
         obsidian # Notes are important, don't judge me!
         wgcf
