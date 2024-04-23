@@ -76,6 +76,7 @@
       ../../modules/outdoors/gaming/my-gaming.nix
       ../../modules/outdoors/usb-flashers.nix
       ../../modules/outdoors/revolt.nix
+      ../../modules/outdoors/creation/obs.nix
     ];
 
 
