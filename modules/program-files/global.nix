@@ -31,12 +31,13 @@
         keepassxc
         translate-shell
         nh
+        flameshot
         nix-index
     ];
 
     imports = 
     [
-        ./dependancies/shotman.nix
+        #./dependancies/shotman.nix
     ];
 
     # Enable flakes:
