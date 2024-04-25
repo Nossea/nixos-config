@@ -77,6 +77,7 @@
       ../../modules/outdoors/usb-flashers.nix
       ../../modules/outdoors/revolt.nix
       ../../modules/outdoors/creation/obs.nix
+      ../../modules/program-files/moonshine.nix
     ];
 
 
