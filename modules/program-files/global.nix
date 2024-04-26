@@ -34,6 +34,7 @@
         flameshot
         nix-index
         firewalld-gui
+        networkmanager
     ];
 
     imports = 
