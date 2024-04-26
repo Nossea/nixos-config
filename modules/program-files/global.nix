@@ -33,8 +33,7 @@
         nh
         flameshot
         nix-index
-        firewalld-gui
-        networkmanager
+        remmina
     ];
 
     imports = 
