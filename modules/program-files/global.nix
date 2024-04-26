@@ -33,6 +33,7 @@
         nh
         flameshot
         nix-index
+        firewalld-gui
     ];
 
     imports = 
