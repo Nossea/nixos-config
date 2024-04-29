@@ -33,7 +33,6 @@
         nh
         flameshot
         nix-index
-        remmina
     ];
 
     imports = 

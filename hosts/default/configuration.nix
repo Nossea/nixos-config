@@ -70,6 +70,7 @@
       ../../modules/program-files/nvidia.nix
       ../../modules/program-files/dependancies/active-dependencies.nix
       ../../modules/program-files/programming-files/active-programming-files.nix
+      ../../modules/program-files/virtual-machines/current-config.nix
       inputs.home-manager.nixosModules.default
       ../../modules/outdoors/media.nix
       ../../modules/outdoors/kde-plasma.nix
@@ -99,7 +100,6 @@
     alacritty
     parsec-bin
     gnome.gnome-disk-utility
-    xautoclick
   ];
 
 
