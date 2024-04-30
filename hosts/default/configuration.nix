@@ -99,7 +99,7 @@
     virt-manager
     alacritty
     parsec-bin
-    gnome.gnome-disk-utility
+    partition-manager
   ];
 
 
