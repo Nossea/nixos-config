@@ -35,6 +35,8 @@
         nix-index
     ];
 
+    programs.partition-manager.enable = true;
+
     imports = 
     [
         #./dependancies/shotman.nix
