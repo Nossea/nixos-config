@@ -73,7 +73,7 @@
       ../../modules/program-files/virtual-machines/current-config.nix
       inputs.home-manager.nixosModules.default
       ../../modules/outdoors/media.nix
-      ../../modules/outdoors/kde-plasma.nix
+      ../../modules/outdoors/desktop-enviornments/kde-plasma.nix
       ../../modules/outdoors/gaming/my-gaming.nix
       ../../modules/outdoors/usb-flashers.nix
       ../../modules/outdoors/revolt.nix
@@ -99,7 +99,7 @@
     virt-manager
     alacritty
     parsec-bin
-    partition-manager
+    keepassxc
   ];
 
 

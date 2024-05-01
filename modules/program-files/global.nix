@@ -17,18 +17,13 @@
     environment.systemPackages = with pkgs; 
     [
         libnotify
-        wget
         firefox
         neofetch
         pika-backup
         libsForQt5.ark
         mpv
         obsidian # Notes are important, don't judge me!
-        wgcf
-        wireguard-tools
-        xmenu
         p7zip
-        keepassxc
         translate-shell
         nh
         flameshot
