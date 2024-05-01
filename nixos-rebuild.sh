@@ -6,6 +6,8 @@ trueVersion=$((previousVersion + 1))
 
 set -e
 
+source ./selected-config.txt
+
 cd ./
 
 git reset
@@ -18,10 +20,11 @@ sudo echo "
 
 Nixos rebuilding..."
 
-sudo nixos-rebuild switch --option eval-cache false --flake ./#default &>nixos-switch.log || (cat nixos-switch.log | grep --color error && false)
+sudo nixos-rebuild switch --option eval-cache false --flake $CONFIG &>nixos-switch.log || (cat nixos-switch.log | grep --color error && false)
 
 echo "Nixos successfully rebuilt!"
 
+# find ./hosts/* -type d -exec git reset -- ./hardware-configuration.nix {} \;
 git reset -- ./nixos-switch.log
 
 git commit -am "Version ${trueVersion}: $current_datetime"
