@@ -10,7 +10,7 @@ cd ./
 
 git reset
 
-git add *
+git add ./
 
 git diff -U0 *.nix
 
