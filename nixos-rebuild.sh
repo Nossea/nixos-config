@@ -26,6 +26,7 @@ echo "Nixos successfully rebuilt!"
 
 # find ./hosts/* -type d -exec git reset -- ./hardware-configuration.nix {} \;
 git reset -- ./nixos-switch.log
+git reset -- ./selected-config.txt
 
 git commit -am "Version ${trueVersion}: $current_datetime"
 

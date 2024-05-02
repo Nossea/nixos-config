@@ -16,19 +16,16 @@
   
   environment.systemPackages = with pkgs; 
   [
-    # Steam 
     mangohud
-    gamemode
-    protonup-qt
 
     # WINE 
     wine
     winetricks
     protontricks
     vulkan-tools
-    
-    # Useful configuration tools
-    gamemode
-    gamescope
   ];
+
+  # Very useful configuration tools
+  programs.steam.gamescopeSession.enable = true;
+  programs.gamemode.enable = true;
 }
