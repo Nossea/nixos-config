@@ -1,1 +1,1 @@
-CONFIG="./#INSERT_NAME_HERE"
+CONFIG="./#lightweight"

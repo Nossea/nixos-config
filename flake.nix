@@ -31,5 +31,16 @@
           ];
         };
       };
+
+      nixosConfigurations = {
+          # The default config
+        lightweight = nixpkgs.lib.nixosSystem {
+          specialArgs = {inherit inputs;};
+          modules = [ 
+            ./hosts/lightweight/configuration.nix
+            inputs.home-manager.nixosModules.default
+          ];
+        };
+      };
     };
 }

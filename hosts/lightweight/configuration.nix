@@ -65,7 +65,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ../../modules/outdoors/desktop-enviornments/kde-plasma.nix
+      ../../modules/outdoors/desktop-enviornments/xfce.nix
       ../../modules/program-files/global.nix
       ../../modules/outdoors/media.nix
     ];
