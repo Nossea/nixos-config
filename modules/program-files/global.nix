@@ -28,6 +28,7 @@
         nh
         flameshot
         nix-index
+        dmidecode
     ];
 
     programs.partition-manager.enable = true;
