@@ -1,3 +1,2 @@
-hosts/**/hardware-configuration.nix
 nixos-switch.log
 selected-config.txt

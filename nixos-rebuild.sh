@@ -14,6 +14,8 @@ git reset
 
 git add --all
 
+git reset home/**hardware-configuration.nix
+
 git diff -U0 *.nix
 
 sudo echo "
