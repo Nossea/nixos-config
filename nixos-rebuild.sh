@@ -14,7 +14,7 @@ git reset
 
 git add --all
 
-git reset home/**hardware-configuration.nix
+
 
 git diff -U0 *.nix
 
@@ -27,6 +27,8 @@ sudo nixos-rebuild switch --option eval-cache false --flake $CONFIG &>nixos-swit
 echo "Nixos successfully rebuilt!"
 
 git commit -am "Version ${trueVersion}: $current_datetime"
+
+git reset -- home/**hardware-configuration.nix
 
 git push
 
