@@ -1,1 +1,1 @@
-CONFIG="./#lightweight"
+CONFIG="./#default"
