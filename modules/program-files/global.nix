@@ -29,6 +29,7 @@
         flameshot
         nix-index
         dmidecode
+        discordchatexporter-cli
     ];
 
     programs.partition-manager.enable = true;
