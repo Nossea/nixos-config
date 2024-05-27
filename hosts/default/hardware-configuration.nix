@@ -12,7 +12,6 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
-  boot.kernelParams = [ "amdgpu.ppfeaturemask=0xffffffff" ];
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/7f7fd0fd-e9cf-4ff9-96ed-a585905d27ce";
