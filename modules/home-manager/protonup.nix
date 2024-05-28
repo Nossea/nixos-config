@@ -3,7 +3,6 @@
 {
     home.packages = with pkgs; [
         protonup
-        protonup-qt
     ];
 
     home.sessionVariables = {

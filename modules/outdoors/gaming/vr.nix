@@ -4,7 +4,7 @@
     programs.alvr.enable = true;
     programs.alvr.openFirewall = true;
 
-    environment.systemPackages = [
-
+    environment.systemPackages = with pkgs; [
+        sidequest
     ];
 }
