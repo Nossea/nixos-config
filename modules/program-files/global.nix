@@ -30,7 +30,7 @@
         nix-index
         dmidecode
         discordchatexporter-cli
-        unetbootin
+        usbimager
     ];
 
     programs.partition-manager.enable = true;
