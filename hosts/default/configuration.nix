@@ -81,6 +81,7 @@
       ../../modules/outdoors/creation/blender.nix
       ../../modules/program-files/moonshine.nix
       ../../modules/outdoors/security-tools/networks.nix
+      ../../modules/outdoors/security-tools/internet.nix
     ];
 
 
