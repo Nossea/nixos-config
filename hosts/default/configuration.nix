@@ -36,7 +36,6 @@
     extraGroups = [ "networkmanager" "wheel" "root" ];
     packages = with pkgs; [
       firefox
-      thunderbird
     ];
   };
 
@@ -98,7 +97,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; 
   [
-    thunderbird
     virt-manager
     alacritty
     parsec-bin

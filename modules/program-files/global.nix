@@ -31,6 +31,7 @@
         dmidecode
         discordchatexporter-cli
         usbimager
+        tutanota-desktop
     ];
 
     programs.partition-manager.enable = true;
