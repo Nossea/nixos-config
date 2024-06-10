@@ -12,6 +12,7 @@
       ../../modules/home-manager/git.nix
       ../../modules/home-manager/discord.nix
       ../../modules/home-manager/protonup.nix
+      ../../modules/home-manager/kitty.nix
     ];
 
   # This value determines the Home Manager release that your configuration is

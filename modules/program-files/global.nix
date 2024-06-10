@@ -31,7 +31,6 @@
         discordchatexporter-cli
         usbimager
         tutanota-desktop
-        kitty
         fastfetch
     ];
 
