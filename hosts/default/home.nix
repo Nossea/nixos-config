@@ -13,6 +13,7 @@
       ../../modules/home-manager/discord.nix
       ../../modules/home-manager/protonup.nix
       ../../modules/home-manager/kitty.nix
+      ../../modules/home-manager/hyprhome.nix
     ];
 
   # This value determines the Home Manager release that your configuration is
