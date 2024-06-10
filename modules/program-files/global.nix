@@ -18,7 +18,6 @@
     [
         libnotify
         firefox
-        neofetch
         pika-backup
         libsForQt5.ark
         mpv
@@ -33,6 +32,7 @@
         usbimager
         tutanota-desktop
         kitty
+        fastfetch
     ];
 
     programs.partition-manager.enable = true;
