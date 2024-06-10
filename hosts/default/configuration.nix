@@ -99,7 +99,7 @@
   environment.systemPackages = with pkgs; 
   [
     virt-manager
-    alacritty
+    kitty
     parsec-bin
     keepassxc
   ];

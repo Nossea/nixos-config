@@ -32,6 +32,7 @@
         discordchatexporter-cli
         usbimager
         tutanota-desktop
+        kitty
     ];
 
     programs.partition-manager.enable = true;
