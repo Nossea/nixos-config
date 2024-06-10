@@ -30,8 +30,10 @@
             ################
 
             # See https://wiki.hyprland.org/Configuring/Monitors/
-            monitor=",preferred,auto,auto";
-
+            monitor = [
+                "DVI-D-1,preferred,auto,auto,transform,3"
+                "HDMI-A-1,preferred,auto,auto"
+            ];
 
             ###################
             ### MY PROGRAMS ###
