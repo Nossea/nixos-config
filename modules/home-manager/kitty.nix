@@ -4,7 +4,10 @@
     programs.kitty = {
         enable = true;
         theme = "Adventure Time";
-        font.name = "Comic Sans";
+        font = {
+            package = pkgs.comic-mono;
+            name = "Comic Mono";
+        };
         settings = {
             confirm_os_window_close = -0;
         };
