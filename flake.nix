@@ -11,6 +11,7 @@
 
     xremap-flake.url = "github:xremap/nix-flake";
 
+    hyprland.url = "github:hyprwm/Hyprland";
   };
   
 

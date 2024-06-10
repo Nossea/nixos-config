@@ -73,6 +73,7 @@
       inputs.home-manager.nixosModules.default
       ../../modules/outdoors/media.nix
       ../../modules/outdoors/desktop-enviornments/kde-plasma.nix
+      ../../modules/outdoors/desktop-enviornments/hyprland.nix
       ../../modules/outdoors/gaming/my-gaming.nix
       ../../modules/outdoors/usb-flashers.nix
       ../../modules/outdoors/revolt.nix
