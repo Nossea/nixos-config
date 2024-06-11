@@ -66,7 +66,6 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ../../modules/program-files/global.nix
-      ../../modules/program-files/nvidia.nix
       ../../modules/program-files/dependancies/active-dependencies.nix
       ../../modules/program-files/programming-files/active-programming-files.nix
       ../../modules/program-files/virtual-machines/current-config.nix
