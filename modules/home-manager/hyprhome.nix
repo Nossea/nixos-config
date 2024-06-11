@@ -45,7 +45,7 @@
             # Set programs that you use
             "$terminal" = "kitty";
             "$fileManager" = "dolphin";
-            "$menu" = "wofi --show drun";
+            "$menu" = "rofi --show drun";
 
 
             #################
@@ -57,7 +57,9 @@
 
             # exec-once = $terminal
             # exec-once = nm-applet &
-            # exec-once = waybar & hyprpaper & firefox
+            exec-once = [
+                "waybar"
+            ];
 
 
             #############################
@@ -208,7 +210,7 @@
                 "$mainMod, M, exit,"
                 "$mainMod, E, exec, $fileManager"
                 "$mainMod, V, togglefloating,"
-                "$mainMod, R, exec, $menu"
+                "$mainMod, SPACE, exec, $menu"
                 "$mainMod, P, pseudo, # dwindle"
                 "$mainMod, J, togglesplit, # dwindle"
 
