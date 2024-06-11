@@ -12,7 +12,7 @@
             # PLEASE USE THE CONFIG PROVIDED IN THE GIT REPO /examples/hypr.conf AND EDIT IT,
             # OR EDIT THIS ONE ACCORDING TO THE WIKI INSTRUCTIONS.
             # #######################################################################################
-
+            
             # This is an example Hyprland config file.
             # Refer to the wiki for more information.
             # https://wiki.hyprland.org/Configuring/Configuring-Hyprland/
@@ -31,8 +31,8 @@
 
             # See https://wiki.hyprland.org/Configuring/Monitors/
             monitor = [
-                "DVI-D-1,preferred,auto,auto,transform,3"
-                "HDMI-A-1,preferred,auto,auto"
+                "DVI-D-1,preferred,1920x0,1,transform,3"
+                "HDMI-A-1,preferred,auto,1"
             ];
 
             ###################
@@ -257,7 +257,10 @@
 
             # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
             # See https://wiki.hyprland.org/Configuring/Workspace-Rules/ for workspace rules
-
+            workspace = [
+                "1, monitor:HDMI-A-1, persistent:true"
+                "2, monitor:DVI-D-1, persistent:true"
+            ];
             # Example windowrule v1
             # windowrule = float, ^(kitty)$
 
