@@ -31,8 +31,9 @@
 
             # See https://wiki.hyprland.org/Configuring/Monitors/
             monitor = [
-                "DVI-D-1,preferred,1920x0,1,transform,3"
-                "HDMI-A-1,preferred,auto,1"
+                "DVI-D-1,preferred,0x0,1,transform,3"
+                "HDMI-A-1,preferred,1920x0,1"
+                "Unknown-1,disable"
             ];
 
             ###################
@@ -260,7 +261,6 @@
             workspace = [
                 "1, monitor:HDMI-A-1, persistent:true"
                 "2, monitor:DVI-D-1, persistent:true"
-                "3"
             ];
             # Example windowrule v1
             # windowrule = float, ^(kitty)$
