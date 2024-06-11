@@ -68,4 +68,7 @@
 
     # Enable CUPS to print documents.
     services.printing.enable = true;
+
+    # Enable Unicode
+    services.kmscon.enable = true;
 }
