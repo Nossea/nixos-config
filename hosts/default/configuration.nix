@@ -76,6 +76,7 @@
       ../../modules/outdoors/gaming/my-gaming.nix
       ../../modules/outdoors/usb-flashers.nix
       ../../modules/outdoors/revolt.nix
+      ../../modules/outdoors/discord.nix
       ../../modules/outdoors/creation/obs.nix
       ../../modules/outdoors/creation/blender.nix
       ../../modules/program-files/moonshine.nix

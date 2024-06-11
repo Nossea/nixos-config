@@ -10,7 +10,6 @@
     [
       ../../modules/home-manager/vscode.nix
       ../../modules/home-manager/git.nix
-      ../../modules/home-manager/discord.nix
     ];
 
   # This value determines the Home Manager release that your configuration is

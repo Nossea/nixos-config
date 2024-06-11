@@ -10,7 +10,6 @@
     [
       ../../modules/home-manager/vscode.nix
       ../../modules/home-manager/git.nix
-      ../../modules/home-manager/discord.nix
       ../../modules/home-manager/protonup.nix
       ../../modules/home-manager/kitty.nix
       ../../modules/home-manager/hyprhome.nix
