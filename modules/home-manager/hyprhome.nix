@@ -32,7 +32,7 @@
             # See https://wiki.hyprland.org/Configuring/Monitors/
             monitor = [
                 "DVI-D-1,preferred,0x0,1,transform,3"
-                "HDMI-A-1,preferred,800x0,1"
+                "HDMI-A-1,preferred,-1080x0,1"
                 "Unknown-1,disable"
             ];
 
