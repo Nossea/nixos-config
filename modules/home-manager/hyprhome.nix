@@ -300,5 +300,9 @@
             };
         };
     };
+
+    programs.rofi = {
+        enable = true;
+    };
 }
  
