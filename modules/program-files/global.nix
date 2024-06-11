@@ -33,6 +33,7 @@
         usbimager
         tutanota-desktop
         fastfetch
+        menulibre
     ];
 
     programs.partition-manager.enable = true;
