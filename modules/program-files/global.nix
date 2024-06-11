@@ -16,6 +16,7 @@
     # Global packages
     environment.systemPackages = with pkgs; 
     [
+        libnotify
         swaynotificationcenter
         firefox
         pika-backup
