@@ -33,7 +33,7 @@
         usbimager
         tutanota-desktop
         fastfetch
-        kdePackages.kmenuedit
+        appeditor
     ];
 
     programs.partition-manager.enable = true;
