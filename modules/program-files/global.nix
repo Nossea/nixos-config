@@ -22,7 +22,7 @@
         pika-backup
         libsForQt5.ark
         mpv
-        #obsidian # Notes are important, don't judge me! (except when the package fails to build that is)
+        obsidian # Notes are important, don't judge me!
         p7zip
         translate-shell
         nh
