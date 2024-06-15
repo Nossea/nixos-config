@@ -6,5 +6,6 @@
         freetube
         syncplay
         syncthing
+        syncthingtray
     ];
 }
