@@ -21,7 +21,8 @@
         firefox
         pika-backup
         libsForQt5.ark
-        mpv
+        vlc
+        streamlink
         obsidian # Notes are important, don't judge me!
         p7zip
         translate-shell
