@@ -8,7 +8,7 @@
 
   imports = 
     [
-      ../../modules/home-manager/vscode.nix
+      ../../modules/home-manager/code.nix
       ../../modules/home-manager/git.nix
       ../../modules/home-manager/protonup.nix
       ../../modules/home-manager/kitty.nix

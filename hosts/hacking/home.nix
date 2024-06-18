@@ -8,8 +8,10 @@
 
   imports = 
     [
-      ../../modules/home-manager/vscode.nix
+      ../../modules/home-manager/code.nix
       ../../modules/home-manager/git.nix
+      ../../modules/home-manager/kitty.nix
+      ../../modules/home-manager/hyprhome.nix
     ];
 
   # This value determines the Home Manager release that your configuration is

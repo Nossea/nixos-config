@@ -10,4 +10,8 @@
       asvetliakov.vscode-neovim
     ];
   };
+
+  programs.neovim = {
+    enable = true;
+  };
 }
