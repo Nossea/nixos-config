@@ -34,11 +34,22 @@
       };
 
       nixosConfigurations = {
-          # The default config
+          # The lightweight config. For laptops mostly.
         lightweight = nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs;};
           modules = [ 
             ./hosts/lightweight/configuration.nix
+            inputs.home-manager.nixosModules.default
+          ];
+        };
+      };
+
+      nixosConfigurations = {
+          # The ethical hacking config ("ethical hacking" is too long of a variable (and doesn't sound as cool :3)).
+        hacking = nixpkgs.lib.nixosSystem {
+          specialArgs = {inherit inputs;};
+          modules = [ 
+            ./hosts/hacking/configuration.nix
             inputs.home-manager.nixosModules.default
           ];
         };
