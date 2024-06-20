@@ -69,6 +69,7 @@
         tutanota-desktop
         fastfetch
         appeditor
+        gnome.gnome-disk-utility
     ];
 
 
