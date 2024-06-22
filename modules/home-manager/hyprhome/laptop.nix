@@ -278,8 +278,12 @@
         };
     };
 
-    programs.rofi = {
+    programs.fuzzel = {
         enable = true;
+        settings = 
+        {
+
+        };
     };
 }
  
