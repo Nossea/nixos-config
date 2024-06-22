@@ -12,7 +12,6 @@
       ../../modules/home-manager/git.nix
       ../../modules/home-manager/protonup.nix
       ../../modules/home-manager/kitty.nix
-      ../../modules/home-manager/hyprhome.nix
       ../../modules/home-manager/discord.nix
     ];
 

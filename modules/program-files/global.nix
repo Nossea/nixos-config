@@ -51,6 +51,7 @@
     environment.systemPackages = with pkgs; 
     [
         libnotify
+        dolphin
         swaynotificationcenter
         firefox
         pika-backup
