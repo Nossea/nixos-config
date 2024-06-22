@@ -31,7 +31,8 @@
       ./hardware-configuration.nix
       ../../modules/program-files/global.nix
       ../../modules/outdoors/desktop-enviornments/hyprland.nix
-    ];
+      ../../modules/outdoors/desktop-enviornments/kde-plasma.nix   
+     ];
 
 
   home-manager = 
