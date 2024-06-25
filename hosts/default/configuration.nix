@@ -34,9 +34,6 @@
     isNormalUser = true;
     description = "Nossea";
     extraGroups = [ "networkmanager" "wheel" "root" ];
-    packages = with pkgs; [
-      firefox
-    ];
   };
 
 
@@ -97,10 +94,8 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; 
   [
-    virt-manager
     kitty
     parsec-bin
-    keepassxc
   ];
 
 
