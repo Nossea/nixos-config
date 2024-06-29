@@ -2,24 +2,17 @@
 
 set -e
 
-echo "
-!!CAREFUL!! This will overwrite ALL "hardware-configuration.nix" files within the hosts directory.
-This is good if you are installing on a new system but bad if you edited them.
-Are you sure you want to do this?
-"
+echo "Only sudo this if this config is within a folder of it's own as it will build a structured directory that extends outside of nixos-config. 
+I recommend setting this directory as "~/home/Nixos/nixos-config" personally. Make sure to create your own host with the generated hardware-configuration.nix file too so it actually runs."
 
-sudo nixos-generate-config --show-hardware-config > ./hardware-configuration.nix
-find ./hosts/* -type d -exec cp ./hardware-configuration.nix {} \;
-rm ./hardware-configuration.nix
-
-clear
+sudo clear
 
 echo "What host will you be using? The avalible options are equal to the names of the folders in the "hosts" directory."
 read configName
 
 trueConfig="./#"$configName
 writtenConfig='CONFIG="'$trueConfig'"'
-echo $writtenConfig > selected-config.txt
+echo $writtenConfig > ../selected-config.txt
 
 sudo nixos-rebuild switch --option eval-cache false --flake $trueConfig &>nixos-switch.log || (cat nixos-switch.log | grep --color error && false)
 

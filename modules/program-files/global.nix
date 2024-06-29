@@ -2,7 +2,7 @@
 
 {
     # All global packages are here. Basically a "starter config".
-
+    nixpkgs.config.allowUnfree = true;
     # Bootloaders
 
     # Grub is slowly getting phased out and thus should be avoided but if that is impossible you can install it here:
@@ -15,6 +15,7 @@
 
 #  ------- USER SETTTINGS -------  #
 
+    networking.hostName = "nixos"; 
 
     # Define a user account. Don't forget to set a password with ‘passwd’.
     users.users.nossea = 
@@ -27,6 +28,7 @@
         ];
     };
 
+    
 
     # Set your time zone.
     time.timeZone = "America/Los_Angeles";
@@ -52,9 +54,7 @@
     [
         libnotify
         dolphin
-        swaynotificationcenter
         firefox
-        pika-backup
         libsForQt5.ark
         vlc
         streamlink
@@ -71,13 +71,15 @@
         fastfetch
         appeditor
         gnome.gnome-disk-utility
+        networkmanager
+        networkmanagerapplet
     ];
 
 
 
     imports = 
     [
-        #./dependancies/shotman.nix
+        inputs.home-manager.nixosModules.default
     ];
 
     # Enable flakes:
@@ -106,20 +108,30 @@
     # Enable CUPS to print documents.
     services.printing.enable = true;
 
-    # Enable Unicode
-    services.kmscon.enable = true;
-    programs.partition-manager.enable = true;
+    # Some programs need SUID wrappers, can be configured further or are
+    # started in user sessions.
+    # programs.mtr.enable = true;
+    # programs.gnupg.agent = {
+    #   enable = true;
+    #   enableSSHSupport = true;
+    # };
 
-    fonts = {
-        enableDefaultPackages = true;
-        fontDir.enable = true;
+    # List services that you want to enable:
 
-        packages = with pkgs; [
-            (nerdfonts.override { fonts = [
-                "SpaceMono" 
-                "JetBrainsMono"
-                "DejaVuSansMono"
-            ]; })
-        ];
-    };
+    # Enable the OpenSSH daemon.
+    # services.openssh.enable = true;
+
+    # Open ports in the firewall.
+    # networking.firewall.allowedTCPPorts = [ ... ];
+    # networking.firewall.allowedUDPPorts = [ ... ];
+    # Or disable the firewall altogether.
+    # networking.firewall.enable = false;
+
+    # This value determines the NixOS release from which the default
+    # settings for stateful data, like file locations and database versions
+    # on your system were taken. It‘s perfectly fine and recommended to leave
+    # this value at the release version of the first install of this system.
+    # Before changing this value read the documentation for this option
+    # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
+    system.stateVersion = "23.11"; # Did you read the comment?
 }

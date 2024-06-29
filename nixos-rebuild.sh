@@ -6,15 +6,13 @@ trueVersion=$((previousVersion + 1))
 
 set -e
 
-source ./selected-config.txt
+source ../selected-config.txt
 
 cd ./
 
 git reset
 
 git add --all
-
-
 
 git diff -U0 *.nix
 

@@ -23,33 +23,22 @@
     {
     
       nixosConfigurations = {
-          # The default config
-        default = nixpkgs.lib.nixosSystem {
+          # My main computer!
+        pc = nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs;};
           modules = [ 
-            ./hosts/default/configuration.nix
+            ./hosts/pc/configuration.nix
             inputs.home-manager.nixosModules.default
           ];
         };
       };
 
       nixosConfigurations = {
-          # The lightweight config. For laptops mostly.
-        lightweight = nixpkgs.lib.nixosSystem {
+          # My cool hacking thinkpad (and my testing grounds for hyprland).
+        hacking-thinkpad = nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs;};
           modules = [ 
-            ./hosts/lightweight/configuration.nix
-            inputs.home-manager.nixosModules.default
-          ];
-        };
-      };
-
-      nixosConfigurations = {
-          # The ethical hacking config ("ethical hacking" is too long of a variable (and doesn't sound as cool :3)).
-        hacking = nixpkgs.lib.nixosSystem {
-          specialArgs = {inherit inputs;};
-          modules = [ 
-            ./hosts/hacking/configuration.nix
+            ./hosts/hacking-thinkpad/configuration.nix
             inputs.home-manager.nixosModules.default
           ];
         };
