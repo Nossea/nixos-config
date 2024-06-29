@@ -31,6 +31,7 @@
       ./hardware-configuration.nix
       ../../modules/program-files/global.nix
       ../../modules/outdoors/desktop-enviornments/hyprland.nix
+      ../../modules/outdoors/security-tools/full-security-suite.nix
      ];
 
 
