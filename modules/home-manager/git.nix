@@ -6,4 +6,9 @@
     git-crypt
     gnupg
   ];
+
+  programs.git = {
+    userEmail = "iamnossea@gmail.com";
+    userName = "Nossea";
+  };
 }
