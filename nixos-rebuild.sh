@@ -26,8 +26,6 @@ echo "Nixos successfully rebuilt!"
 
 git commit -am "Version ${trueVersion}: $current_datetime"
 
-git reset -- home/**hardware-configuration.nix
-
 git push
 
 echo "
