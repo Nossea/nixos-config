@@ -1,8 +1,4 @@
 warning: Git tree '/home/nossea/Nixos/nixos-config' is dirty
-warning: updating lock file '/home/nossea/Nixos/nixos-config/flake.lock':
-• Added input 'nixpkgs-stable':
-    'github:nixos/nixpkgs/d032c1a6dfad4eedec7e35e91986becc699d7d69' (2024-07-01)
-warning: Git tree '/home/nossea/Nixos/nixos-config' is dirty
 building the system configuration...
 warning: Git tree '/home/nossea/Nixos/nixos-config' is dirty
 activating the configuration...

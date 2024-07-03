@@ -1,6 +1,6 @@
 { config, lib, /*NVIDIA is a bit silly and make my second monitor not work so it's being put in the stable corner*/ pkgs-stable, ... }:
 {
-
+  disabledModules = ["pkgs"];
 
   # Enable OpenGL
   hardware.graphics = {
