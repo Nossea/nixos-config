@@ -2,8 +2,9 @@
 
 {
     programs.hyprland.enable = true;
-    environment.systemPackages = [
-        pkgs.ags
+    environment.systemPackages = with pkgs; 
+    [
+        ags
         swaynotificationcenter
     ];
 }

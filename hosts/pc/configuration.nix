@@ -14,6 +14,7 @@
       ../../modules/program-files/virtual-machines/bottles.nix
       ../../modules/outdoors/media.nix
       ../../modules/outdoors/desktop-enviornments/kde-plasma.nix
+      ../../modules/outdoors/desktop-enviornments/hyprland.nix
       ../../modules/outdoors/gaming/my-gaming.nix
       ../../modules/outdoors/usb-flashers.nix
       ../../modules/outdoors/revolt.nix
