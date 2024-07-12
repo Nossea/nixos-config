@@ -1,7 +1,6 @@
-{ config, lib, /*NVIDIA is a bit silly and make my second monitor not work so it's being put in the stable corner*/ pkgs-stable, ... }:
-{
-  disabledModules = ["nixos-unstable"];
+{ config, lib, pkgs, ... } @ args:
 
+{
   # Enable OpenGL
   hardware.graphics = {
     enable = true;

@@ -3,7 +3,7 @@
 {
     environment.systemPackages = with pkgs; 
     [
-        sunshine
-        moonlight-qt
+        #sunshine
+        #moonlight-qt
     ];
 }
